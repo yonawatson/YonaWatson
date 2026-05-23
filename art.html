@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art — Yona Watson</title>
+  <style>
+    /* --- shared base --- */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Times New Roman", Times, serif;
+      font-weight: normal;
+      background: #fff;
+      color: #111;
+    }
+
+    /* --- nav --- */
+    nav {
+      display: flex;
+      gap: 2rem;
+      padding: 1.5rem 2rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #111;
+      font-size: 0.9rem;
+      letter-spacing: 0.05em;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    /* --- page content --- */
+    main {
+      max-width: 800px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+    }
+    h2 { font-size: 1.5rem; font-weight: normal; margin-bottom: 2rem; }
+
+    /* --- gallery grid --- */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+    .gallery figure {
+      margin: 0;
+    }
+    .gallery img {
+      width: 100%;
+      display: block;
+    }
+    .gallery figcaption {
+      font-size: 0.85rem;
+      color: #555;
+      margin-top: 0.4rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Yona Watson</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+  </nav>
+
+  <main>
+    <h2>Art</h2>
+
+    <div class="gallery">
+      <!-- ARTWORK: copy this block to add more pieces -->
+      <figure>
+        <img src="images/artwork1.jpg" alt="Artwork title">
+        <figcaption>Artwork title, year</figcaption>
+      </figure>
+    </div>
+
+  </main>
+
+</body>
+</html>
